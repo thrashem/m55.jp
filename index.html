@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thrashem - プロジェクト一覧</title>
+    <title>すらっしゅ⭐えむっ | thrashem</title>
     <style>
         * {
             margin: 0;
@@ -20,228 +20,171 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 640px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             color: white;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            margin: 0 auto 16px;
+            display: block;
+            object-fit: cover;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 1.6rem;
+            margin-bottom: 4px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
 
-        .subtitle {
-            font-size: 1.1rem;
-            opacity: 0.9;
+        .handle {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0;
         }
 
-        .profile-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
         }
 
-        .profile-link:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .repositories {
-            display: grid;
-            gap: 25px;
-        }
-
-        .repo-card {
+        .link-card {
             background: white;
             border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
+            padding: 16px 22px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+            transition: all 0.25s ease;
             text-decoration: none;
             color: inherit;
-            display: block;
-        }
-
-        .repo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .repo-header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
+            gap: 14px;
         }
 
-        .repo-name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #667eea;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
         }
 
-        .repo-icon {
-            font-size: 1.2rem;
+        .link-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            object-fit: cover;
         }
 
-        .language-tag {
-            display: inline-block;
-            padding: 5px 12px;
-            background: #f0f0f0;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            color: #666;
+        .link-text {
+            flex: 1;
         }
 
-        .repo-description {
+        .link-title {
             font-size: 1rem;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-weight: 600;
+            color: #333;
         }
 
-        .repo-link {
-            color: #667eea;
-            font-size: 0.9rem;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .repo-link:hover {
-            text-decoration: underline;
+        .link-desc {
+            font-size: 0.82rem;
+            color: #888;
+            margin-top: 2px;
         }
 
         footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
             color: white;
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .repo-card {
-                padding: 20px;
-            }
-
-            .repo-name {
-                font-size: 1.3rem;
-            }
-
-            .repo-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
+            opacity: 0.7;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🚀 thrashem</h1>
-            <p class="subtitle">Windowsアプリケーション＆ツール開発</p>
-            <a href="https://github.com/thrashem" class="profile-link" target="_blank">
-                GitHubプロフィールを見る →
-            </a>
+            <img src="./images/kmWVSBo90tGa.jpg" alt="すらっしゅ⭐えむっ" class="avatar">
+            <h1>すらっしゅ⭐えむっ</h1>
+            <p class="handle">thrashem</p>
         </header>
 
-        <div class="repositories">
-            <a href="https://github.com/thrashem/cget-cset" class="repo-card" target="_blank">
-                <div class="repo-header">
-                    <h2 class="repo-name">
-                        <span class="repo-icon">📋</span>
-                        cget-cset
-                    </h2>
-                    <span class="language-tag">C</span>
+        <div class="links">
+            <a href="https://x.com/seullaesi" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/sns_x_color.webp" alt="Twitter" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">Twitter</div>
+                    <div class="link-desc">いつも書いてる</div>
                 </div>
-                <p class="repo-description">
-                    Lightweight clipboard tools for Windows<br>
-                    Windows向けの軽量クリップボードツール
-                </p>
-                <span class="repo-link">リポジトリを見る →</span>
             </a>
 
-            <a href="https://github.com/thrashem/WXballoon" class="repo-card" target="_blank">
-                <div class="repo-header">
-                    <h2 class="repo-name">
-                        <span class="repo-icon">🌤️</span>
-                        WXballoon
-                    </h2>
-                    <span class="language-tag">C#</span>
+            <a href="https://jp.quora.com/profile/Thrash-em" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/dMJp4vp0Zb94.jpg" alt="Quora" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">Quora</div>
+                    <div class="link-desc">いつも回答してる</div>
                 </div>
-                <p class="repo-description">
-                    指定した郵便番号の場所の今日と明日の天気をバルーン通知するWindowsアプリです。
-                </p>
-                <span class="repo-link">リポジトリを見る →</span>
             </a>
 
-            <a href="https://github.com/thrashem/txtScrap" class="repo-card" target="_blank">
-                <div class="repo-header">
-                    <h2 class="repo-name">
-                        <span class="repo-icon">📝</span>
-                        txtScrap
-                    </h2>
-                    <span class="language-tag">Visual Basic .NET</span>
+            <a href="https://www.instagram.com/seullaesi/" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/instagram_color.webp" alt="Instagram" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">Instagram</div>
+                    <div class="link-desc">最近また更新</div>
                 </div>
-                <p class="repo-description">
-                    クリップボード内のテキストを、既定フォルダに日付ファイル名で追記するWindowsアプリです。
-                </p>
-                <span class="repo-link">リポジトリを見る →</span>
             </a>
 
-            <a href="https://github.com/thrashem/txtCount" class="repo-card" target="_blank">
-                <div class="repo-header">
-                    <h2 class="repo-name">
-                        <span class="repo-icon">🔢</span>
-                        txtCount
-                    </h2>
-                    <span class="language-tag">C#</span>
+            <a href="https://github.com/thrashem" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/github_color.webp" alt="GitHub" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">GitHub</div>
+                    <div class="link-desc">小さいアプリを公開中</div>
                 </div>
-                <p class="repo-description">
-                    クリップボード内テキストの文字数をカウントして、バルーン通知するWindowsアプリです。
-                </p>
-                <span class="repo-link">リポジトリを見る →</span>
             </a>
 
-            <a href="https://github.com/thrashem/Cult-Chrome-LUT" class="repo-card" target="_blank">
-                <div class="repo-header">
-                    <h2 class="repo-name">
-                        <span class="repo-icon">🎨</span>
-                        Cult-Chrome-LUT
-                    </h2>
-                    <span class="language-tag">LUT</span>
+            <a href="https://anilist.co/user/thrashem/animelist" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/72DxFVHFuoOQ.jpg" alt="Anime List" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">Anime List</div>
+                    <div class="link-desc">観ているアニメのリスト</div>
                 </div>
-                <p class="repo-description">
-                    Cult Chrome LUTは、画像編集や動画編集アプリでの使用を想定したルックアップテーブル(LUT)です。
-                </p>
-                <span class="repo-link">リポジトリを見る →</span>
+            </a>
+
+            <a href="https://m55.jp/lutaplyr/" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/H4aQLZuo5Y2X.jpg" alt="LUT Aplyr" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">LUT Aplyr</div>
+                    <div class="link-desc">画像をクラシッククローム風に加工</div>
+                </div>
+            </a>
+
+            <a href="https://m55.jp/shinsho-cover-gen.html" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/H4aQLZuo5Y2X.jpg" alt="新書表紙ジェネレータ" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">新書表紙ジェネレータ</div>
+                    <div class="link-desc"></div>
+                </div>
+            </a>
+
+            <a href="https://m55.jp/matrix-generator.html" class="link-card" target="_blank" rel="noopener">
+                <img src="./images/H4aQLZuo5Y2X.jpg" alt="4象限マトリクスジェネレータ" class="link-icon">
+                <div class="link-text">
+                    <div class="link-title">4象限マトリクスジェネレータ</div>
+                    <div class="link-desc"></div>
+                </div>
             </a>
         </div>
 
         <footer>
-            <p>© 2024 thrashem | Twitter: <a href="https://twitter.com/seullaesi" style="color: white;">@seullaesi</a></p>
+            <p>© 2024 thrashem</p>
         </footer>
     </div>
 </body>
